@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
-var db = require('./models');
+var db = require('../models');
 
 /* GET articles listing. */
-router.get('/api/articles', function(req, res) {
+router.get('/articles', function(req, res) {
 
   console.log("Retreiving articles...");
 
@@ -16,7 +16,7 @@ router.get('/api/articles', function(req, res) {
 
 
 // SAVE article
-router.post('/api/articles', function(req, res) {
+router.post('/articles', function(req, res) {
 
   console.log("Saving article...");
 
@@ -35,7 +35,7 @@ router.post('/api/articles', function(req, res) {
 
 
 //DELETE article
-router.delete('/api/articles', function(req, res) {
+router.delete('/articles', function(req, res) {
 
   console.log("Deleting article...");
 
